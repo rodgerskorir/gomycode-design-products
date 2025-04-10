@@ -1,0 +1,89 @@
+// variables
+$padding: 10px;
+$border-radius: 10px;
+$font-size: 24px;
+$margin: 10px;
+
+
+// reset styles
+*{
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// wrapper
+.wrapper{
+    // background-color: red;
+    margin: $margin*3;
+    max-width: 1200px;
+    margin-inline: auto;
+    width: 96%;
+  
+}
+// hero-section
+.hero-section{
+    margin: $margin*3;
+    // background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding-top: $padding*7;
+    border: 2px solid red;
+
+    .rec-paragraph{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-content{
+        width: 50%;
+        border: 2px solid red;
+
+        h1{
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: $margin;
+        }
+
+        .hero-h1{
+            padding-left: $padding*3;
+        }
+        .hero-pg{
+            font-size: $font-size;
+            padding-left: $padding*3;    
+            
+            // background-color: red;
+        }
+        .hero-btn{
+            background-color: #06040A;
+            color: #FFFFFF;
+            border-radius: $border-radius*4;       
+            padding: $padding*1.5 $padding*4;
+        }
+    }
+
+    // hero images
+
+   
+    
+    .hero-images .circle-image{
+        right: 10px;
+        background-color: red;
+       
+       }
+    //    .hero-images .hero-image{
+       
+    //    }
+      
+   
+}
+
+.card-section{
+    display: flex;
+    justify-content: space-between;
+
+    .cards{
+        height: 229px;
+        width: 327px;
+    }
+}
