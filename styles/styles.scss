@@ -4,86 +4,112 @@ $border-radius: 10px;
 $font-size: 24px;
 $margin: 10px;
 
-
 // reset styles
-*{
-    padding: 0;
-    margin: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 // wrapper
-.wrapper{
-    // background-color: red;
-    margin: $margin*3;
-    max-width: 1200px;
-    margin-inline: auto;
-    width: 96%;
-  
+.wrapper {
+  // background-color: red;
+  margin: $margin * 3;
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 96%;
 }
 // hero-section
-.hero-section{
-    margin: $margin*3;
-    // background-color: blue;
+.hero-section {
+  margin: $margin * 3;
+  // background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  padding-top: $padding * 7;
+  position: relative;
+
+//   rectangle shape elemnnt
+  .rec-paragraph {
     display: flex;
     justify-content: space-between;
-    padding-top: $padding*7;
-    border: 2px solid red;
+  }
 
-    .rec-paragraph{
-        display: flex;
-        justify-content: space-between;
+//   styling hero content
+  .hero-content {
+    width: 50%;
+
+    // styling h1 on hero section
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: $margin;
     }
-    .hero-content{
-        width: 50%;
-        border: 2px solid red;
-
-        h1{
-            font-size: 38px;
-            font-weight: 700;
-            margin-bottom: $margin;
-        }
-
-        .hero-h1{
-            padding-left: $padding*3;
-        }
-        .hero-pg{
-            font-size: $font-size;
-            padding-left: $padding*3;    
-            
-            // background-color: red;
-        }
-        .hero-btn{
-            background-color: #06040A;
-            color: #FFFFFF;
-            border-radius: $border-radius*4;       
-            padding: $padding*1.5 $padding*4;
-        }
+// styling the second h1 on hero section
+    .hero-h1 {
+      padding-left: $padding * 4;
     }
+    .hero-pg {
+      font-size: $font-size;
+      padding-left: $padding * 3;
 
-    // hero images
+    }
+    // hero button styling
+    .hero-btn {
+      background-color: #06040a;
+      color: #ffffff;
+      border-radius: $border-radius * 4;
+      padding: $padding * 2 $padding * 5;
+     
+    }
+  }
 
-   
-    
-    .hero-images .circle-image{
-        right: 10px;
-        background-color: red;
-       
-       }
-    //    .hero-images .hero-image{
-       
-    //    }
-      
-   
+//   hero cycle image styling
+
+  .hero-images .circle-image {
+    right: 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 90px;
+  }
+//   hero image styling
+  .hero-images .hero-image {
+    max-width: 100%;
+  }
 }
 
-.card-section{
-    display: flex;
-    justify-content: space-between;
+// styling the card section
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  margin: $margin * 3;
+  padding-top: $padding*3;
 
-    .cards{
-        height: 229px;
-        width: 327px;
+//   styling the cards 
+  .cards {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: $padding * 2 + 4;
+    width: 327px;
+    height: 229px;
+    
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: $margin * 3;
+      font-weight: bold;
+      font-size: 25px;
     }
+
+    p {
+      color: #06040A;
+      font-size: 18px;
+    }
+  }
+
+//   styling the blue cards
+  #blue-card {
+    background-color: #e2e7f1;
+  }
 }
